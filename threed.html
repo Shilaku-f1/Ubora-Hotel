@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>3D Image Gallary</title>
+        <link rel="stylesheet" href="threed.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="box">
+                <span style="--i:1"><img src="pexels-alexy-almond-3757729.jpg" alt=""></span>
+                <span style="--i:2"><img src="pexels-alexy-almond-3757729.jpg" alt="" ></span>
+                <span style="--i:3"><img src="pexels-alexy-almond-3757729.jpg" alt="" ></span>
+                <span style="--i:4"><img src="pexels-alexy-almond-3757729.jpg" alt="" ></span>
+                <span style="--i:5"><img src="pexels-alexy-almond-3757729.jpg" alt="" ></span>
+                <span style="--i:6"><img src="pexels-alexy-almond-3757729.jpg" alt="" ></span>
+                <span style="--i:7"><img src="pexels-alexy-almond-3757729.jpg" alt="" ></span>
+                <span style="--i:8"><img src="pexels-alexy-almond-3757729.jpg" alt="" ></span>
+            </div>
+            <div class="btns">
+                <div class="btn prev"></div>
+                <div class="btn next"></div>
+            </div>
+        </div>
+        <script>
+            let prev = document.querySelector('.prev');
+            let next = document.querySelector('.next');
+            let box = document.querySelector('.box'); 
+
+            let degrees= 0;
+
+            prev.addEventListener('click', function(){
+                degrees += 45;
+                box.style = `transform: perspective(1000px) rotateY(${degrees}deg)`;
+            })
+
+            next.addEventListener('click', function(){
+                degrees -= 45;
+                box.style = `transform: perspective(1000px) rotateY(${degrees}deg)`;
+            })
+        </script>
+    </body>
+</html>

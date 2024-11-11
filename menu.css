@@ -1,0 +1,135 @@
+body{
+    background-color: black;
+}
+.main{
+    position: relative;
+    width:100px;
+    height:100vh;
+}
+
+.navbar{
+    position: relative;
+    width: 100%;
+    height:100px;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.theImage{
+    position: relative;
+    width: 15%;
+    height: 100%;
+    
+}
+.navbar1{
+    position: relative;
+    width: 70%;
+    height: 100%;
+    margin-left: 200px;
+    margin-right: 0px;
+    margin-top: 0px;
+
+}
+.logo{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
+    cursor: pointer;
+}
+/*MENU BARS*/
+.menu-bars{
+    position: relative;
+    width: 15%;
+    height: 60%;
+    margin-right: 0px;
+    margin-top: 0px;
+    flex: 0%;
+}
+.menu{
+    cursor: pointer;
+}
+.bar1, .bar2, .bar3{
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin-top: 6px;
+    margin-right: 50px;
+    transition: 0.4s;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #efefef;
+    font-weight: 600;
+    padding: 15px;
+}
+
+
+li a:hover{
+    background:orange;
+    transition: 0.5s;
+}
+.navbar a:hover{
+    color: black;
+}
+.main{
+    position: absolute;
+    width: 100%;
+    height: 1300px;
+   
+}
+.ourMenu{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding-top: 5px;
+    background-color: orange;
+    border-radius: 10px;
+}
+.imagesContainer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color:black;
+}
+.imagesContainer1{
+    position: relative;
+    display: flex;
+    left: 0px;
+    width: 100%;
+    height: 40%;
+    background-color: black;
+    margin: 5px;
+}
+.imagesContainer2{
+    position: relative;
+    width: 30%;
+    height: 98%;
+    margin-left: 26px;
+    background-color: black;
+}
+.box1{
+    position: relative;
+    width: 100%;
+    height: 75%;
+    border-radius: 0px, 0px , 20px, 20px;
+}
+.box2{
+    position: relative;
+    width: 100%;
+    height: 25%;
+    background-color:black;
+    color: #efefef;
+    bottom: 22px;
+    font-size: 18px;
+    text-align: center;
+}

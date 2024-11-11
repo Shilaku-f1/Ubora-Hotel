@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    font-family: Poppins;
+    box-sizing: border-box;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    background-position: center;
+    background-size: auto;
+    justify-content: center;
+}
+.navbar{
+    position: relative;
+    width: 100%;
+    height:20%;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.theImage{
+    position: relative;
+    width: 15%;
+    height: 100%;
+    
+}
+.navbar1{
+    position: relative;
+    width: 70%;
+    height: 100%;
+    margin-left: 200px;
+    margin-right: 0px;
+    margin-top: 30px;
+
+}
+.logo{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
+    cursor: pointer;
+}
+/*MENU BARS*/
+.menu-bars{
+    position: relative;
+    width: 15%;
+    height: 60%;
+
+    margin-right: 0px;
+    margin-top: 0px;
+    flex: 0%;
+}
+.menu{
+    cursor: pointer;
+}
+.bar1, .bar2, .bar3{
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin-top: 6px;
+    margin-right: 50px;
+    transition: 0.4s;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #efefef;
+    font-weight: 600;
+    padding: 15px;
+}
+
+
+li a:hover{
+    background:orange;
+    transition: 0.5s;
+}
+.navbar a:hover{
+    color: black;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    color: orange;
+    top: 45%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.content h1{
+    margin-top: 80px;
+    font-size: 90px;
+    font-weight: 800;
+}
+.content h2{
+    margin-top: 30px;
+    font-size: 30px;
+    font-family: Times New Roman;
+    font-weight: 900;
+    color: #efefef;
+}
+.content a{
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 15px 15px;
+    border-radius: 25px;
+    margin: 20px 5px;
+
+}
+a:hover{
+    background: black;
+    color: orange;
+    transition: 0.5s;
+}
+.welcome{
+    position: absolute;
+    top: 500px;
+    left: 550px;
+}
+
+.footer {
+    position: absolute;
+    text-align: center;
+    padding: 3px;
+    left: 530px;
+    top: 740px;
+    color: white;
+    display: block;
+  }
+  .background-clip{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index:-1;
+}
+@media (min-aspect-ratio:16/9) {
+    .banner video{
+        width: 100%;
+        height: auto;
+    }
+    
+}
+body{
+    background: white;
+    
+}
+.pics{
+    width: 80%;
+    margin: 80px auto;
+}
+.pics h1{
+    padding: 60px 0;
+    color: red;
+    font-size: 50px;
+    text-align: center;
+}
+.row{
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap; 
+}
+.col{
+    flex-basis: 50%;
+    min-width: 250px;
+}
+.feature-img{
+    width: 83%;
+    margin: auto;
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.small-img-row{
+    display: flex;
+    background: #efefef;
+    margin: 20px 0;
+    align-items: center;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.small-img{
+    position: relative;
+}
+.small-img img{
+    width: 150px;
+}
+.small-img-row p{
+    margin-left: 20px;
+    color: orchid;
+    line-height: 22px;
+    font-size: 15px;
+}
+.play-btn{
+    width:60px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+
+.end{
+    position: relative;
+    margin-left:520px ;
+}

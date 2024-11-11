@@ -1,0 +1,149 @@
+<html>
+    <head>
+        <title>contact us</title>
+        <link rel="stylesheet" href="contact.css">
+        <script>
+            function twitter(){
+                window.open("https://twitter.com/i/flow/login");
+            }
+            function instagram(){
+                window.open("https://www.instagram.com/");
+            }
+            function gmail(){
+                window.open("https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fmyaccount.google.com%2F%3Futm_source%3DOGB%26utm_medium%3Dapp&ec=GAlAwAE&hl=en&service=accountsettings&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S738912216%3A1698737851822062&theme=glif");
+            }
+            function facebook(){
+                window.open("https://web.facebook.com/");
+            }
+            function whatsapp(){
+                window.open("https://web.whatsapp.com/");
+            }
+        </script>
+
+    </head>
+    <body>
+        <div class="Thecontainer">
+            <div class="navbar">
+                <div class="theImage">
+                    <img class="logo" src="images\logo.png">
+                </div>
+                
+                <div class="navbar1">
+                    <ul>
+                        <li><a href="homepage.html">HOME</a></li>
+                        <li><a href="menu.html">MENU</a></li>
+                        <li><a href="index.html">EVENTS</a></li>
+                        <li><a href="#">ABOUT US</a></li>
+                    </ul>
+                </div>
+                <div class="menu-bars">
+                    <div class="menu" onclick="window.location.href='index.html'">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="theImage1">
+                <img src="picture1.webp" alt="a pic" style="width: 100%; height: 100%;">
+            </div>
+            <div class="theText">
+                <h1>Come talk to us</h1>
+                <p>we always value your word and presence</p>
+            </div>
+            <div class="bass">
+                <div class="container">
+                    <form action="#">
+                        <div class="main-user-info">
+                            <div class="user-input-box">
+                                <label for="firstName">First name</label>
+                                <input type="text" id="firstName" name="firstName" placeholder="First Name">
+                            </div>
+                            <div class="user-input-box">
+                                <label for="lastName">last name</label>
+                                <input type="text" id="lastName" name="lastName" placeholder="last name">
+                            </div>
+                            <div class="user-input-box">
+                                <label for="email">email</label>
+                                <input type="text" id="email" name="email" placeholder="Enter Email">
+                            </div>
+                            <div class="user-input-box">
+                                <label for="phoneNumber">phone number</label>
+                                <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Enter phone number">
+                            </div>
+                            <div class="user-input-box2">
+                                <label for="comment"></label>
+                                <input type="text" id="comment" name="comment" placeholder="Comment ..." maxlength="200" style="padding-bottom: 260px; margin-left: 10px;">
+                            </div>
+                           
+                        </div>
+                        <div class="form-submit-btn">
+                            <input type="submit" value="submit" style="color: black; font-weight: bold;">
+                        </div>
+                        
+        
+                    
+                        
+                    </form>
+                    
+                </div>
+
+            </div>
+            <div class="contactus">
+                <div class="contactus1">
+
+                </div>
+                   
+                <div class="whatsapp">
+                    <div class="whatsapp1" style="cursor:pointer" onclick="whatsapp()"> <img src="pngwing.com (2).png" alt="Whatsapp" style="width: 30px; height: 30px;"></div>
+                    <div class="phoneno"><p>+254708741173</p></div>
+                </div>
+                    <div class="location">
+                        <div class="location1"><img src="pngwing.com (3).png" alt="location" style="width: 20px; height: 20px;"></div>
+                        <div class="text"><p>Westlands Milele Tower second Floor</p></div>
+                    </div>
+                    <div class="allIcons">
+                        <a href="#" class="allIcon facebook" style="cursor:pointer" onclick="facebook(event)">
+                            <img src="pngwing.com.png" alt="Facebook" style="width: 35px; height: 35px;">
+                        </a>
+                        <a href="#" class="allIcon twitter" style="cursor:pointer" onclick="twitter(event)">
+                            <img src="pngwing.com (5).png" alt="Twitter" style="width: 33px; height: 33px;">
+                        </a>
+                        <a href="#" class="allIcon" style="cursor:pointer" onclick="instagram(event)">
+                            <img src="pngwing.com (1).png" alt="Instagram" style="width: 30px; height: 30px;">
+                        </a>
+                        <a href="#" class="allIcon" style="cursor:pointer" onclick="gmail(event)">
+                            <img src="pngwing.com (4).png" alt="Gmail" style="width: 30px; height: 30px;">
+                        </a>
+                    </div>
+                    
+                    <script>
+                        function facebook(event) {
+                            event.preventDefault();
+                            window.location.href = '#';
+                        }
+                    
+                        function twitter(event) {
+                            event.preventDefault();
+                            window.location.href = '#';
+                        }
+                    
+                        function instagram(event) {
+                            event.preventDefault();
+                            window.location.href = '#';
+                        }
+                    
+                        function gmail(event) {
+                            event.preventDefault();
+                            window.location.href = '#';
+                        }
+                    </script>
+                    
+                <div class="underIcons">
+
+                </div>
+                <div class="end"><p>&copy; 2024 Shilaku Innocent Omuyonga. All rights reserved.</p></div>
+            </div>
+        </div>
+    </body>
+</html>

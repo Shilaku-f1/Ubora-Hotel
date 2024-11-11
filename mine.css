@@ -1,0 +1,81 @@
+.border-top{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 160%;
+    height: 3px;
+    background: linear-gradient(to right, #171618,red,orange, #fcc23f,wheat);
+    animation: animate-border-top 2s linear infinite;
+    animation-delay: 0.3;
+}
+@keyframes animate-border-top{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+.border-right{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 3px;
+    background: linear-gradient(to bottom, #171618,red,orange, #fcc23f,wheat);
+    animation: animate-border-right 2s linear infinite;
+    animation-delay: 1s;
+}
+@keyframes animate-border-right{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(100%);
+    }
+}
+.border-bottom{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 185%;
+    height: 3px;
+    background: linear-gradient(to left, #171618,red,orange, #fcc23f,wheat);
+    animation: animate-border-bottom 2s linear infinite;
+
+}
+@keyframes animate-border-bottom{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateY(-100%);
+    }
+}
+
+.border-left{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background: linear-gradient(to top, #171618,red,orange,#fcc23f,wheat,white);
+    animation: animate-border-left 2s linear infinite;
+    animation-delay: 1s;
+}
+@keyframes animate-border-left{
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(-100%);
+    }
+}
+.box{
+    position: absolute;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color:white;
+    width: 90%;
+    height: 205px;
+}

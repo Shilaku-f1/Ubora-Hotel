@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    font-family: Poppins;
+    box-sizing: border-box;
+}
+
+.Thecontainer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-position: center;
+    background-size: auto;
+    justify-content: center;
+}
+.navbar{
+    position: relative;
+    width: 100%;
+    height:20%;
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.theImage{
+    position: relative;
+    width: 15%;
+    height: 100%;
+    
+}
+.navbar1{
+    position: relative;
+    width: 70%;
+    height: 100%;
+    margin-left: 200px;
+    margin-right: 0px;
+    margin-top: 30px;
+
+}
+.logo{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
+    cursor: pointer;
+}
+/*MENU BARS*/
+.menu-bars{
+    position: relative;
+    width: 15%;
+    height: 60%;
+
+    margin-right: 0px;
+    margin-top: 0px;
+    flex: 0%;
+}
+.menu{
+    cursor: pointer;
+}
+.bar1, .bar2, .bar3{
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin-top: 6px;
+    margin-right: 50px;
+    transition: 0.4s;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #efefef;
+    font-weight: 600;
+    padding: 15px;
+}
+
+
+li a:hover{
+    background:orange;
+    transition: 0.5s;
+}
+.navbar a:hover{
+    color: black;
+}
+.theImage1{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+}
+.theText{
+    position:absolute;
+    bottom: 200px;
+    left: 40%;
+    color: white;
+    font-size: 24px;
+    text-align: justify;
+}
+
+/*CONTACT US*/
+.bass{
+    position: relative;
+    width: 100%;
+    height: 120vh;
+    background-color: black;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 650px;
+    top: 15px;
+    background-color:black;
+    padding: 28px;
+    margin: 0 300px;
+    border-radius: 10px;
+    box-shadow: inset -2px 2px 2px white;
+}
+
+.main-user-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.user-input-box:nth-child(2n){
+    justify-content: end;
+
+}
+
+.user-input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+.user-input-box2 input{
+    padding-bottom: 0px;
+    text-align: left;
+    height: 300px;
+    width: 300%;
+}
+
+.user-input-box label{
+    width: 95%;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.user-input-box input{
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
+    outline:invert;
+    
+    outline-width: 2px;
+    border: 1px solid grey;
+    padding: 0 10px;
+}
+
+.form-submit-btn{
+    margin-top: 40px;
+}
+
+.form-submit-btn input{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    color: rgba(209, 209, 209);
+    background: orange;
+}
+
+.form-submit-btn input:hover{
+    background:orangered;
+}
+
+@media(max-width: 600px){
+    .container{
+        min-width: 280px
+    }
+
+    .user-input-box{
+        margin-bottom: 12px;
+        width: 100%;
+    }
+
+   .user-input-box:nth-child(2n){
+        justify-content: space-between;
+    }
+
+    .main-user-info{
+        max-height: 380px;
+        overflow: auto;
+
+    }
+
+    .main-user-info::-webkit-scrollbar{
+        width: 0;
+    }
+}
+.contactus{
+    position: relative;
+    top: 5px;
+    background-color: white;
+    width: 100%;
+    height: 100px;
+}
+
+.contactus1{
+    position: relative;
+    top:2px;
+    background-color: orange;
+    width: 100%;
+    height: 2px;
+}
+.myIcon{
+    position:relative;
+    background-color: white;
+    width: 10%;
+    height: 100px;
+    margin-left: 600px;
+    margin-top: 10px;
+}
+.myIcon1{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.whatsapp{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    top: 20px;
+    display: flex;
+}
+.whatsapp1{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin-left: 600px;
+    margin-top: -5px;
+    margin-right: 10px;
+    
+}
+.location{
+    position: relative;
+    display: flex;
+    width: 40%;
+    height: 100px;
+    margin-left: 520px;
+
+}
+.location1{
+    position: relative;
+    top: 5px;
+    width: 3%;
+    height: 10%;
+    margin-top: 13px;
+    margin-right: 10px;
+}
+.text{
+    position: relative;
+    top: 20px;
+}
+
+.allIcons{
+    position: relative;
+    display: flex;
+    width: 90%;
+    height: 40px;
+    margin-left: 100px;
+    bottom: 40px;
+    background-color: white;
+}
+.allIcon{
+    position: relative;
+    width: 2%;
+    height: 20%;
+    margin-left: 200px;
+}
+.facebook{
+    width: 2.5%;
+    bottom: 0px;
+}
+.twitter{
+    width: 2.3%;
+
+}
+
+.underIcons{
+    position: relative;
+    width: 80%;
+    height: 5px;
+    background-color: orange;
+    border-radius: 5px;
+    margin-left: 200px;
+    bottom: 30px;
+}
+.end{
+    position: relative;
+    bottom: 10px;
+    margin-left:620px ;
+}

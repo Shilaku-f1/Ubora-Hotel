@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>UBORA Gallery</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="pics">
+            <h1>Our Gallery</h1>
+            <div class="row">
+           <div class="col">
+            <div class="feature-img">
+              <div>
+                <video style="height: 300px; width: 400px;" src="images\pexels_videos_1111421 (1080p).mp4" autoplay muted></video>
+              </div>
+                <img src="images\pexels-lisa-fotios-1126728.jpg" width="100%">
+                <img src="images\video-icon-8030.jpg" class="play-btn">
+        </div>
+           </div>
+           <div class="col">
+            <div class="small-img-row">
+              <div class="small-img">
+                <img src="images\pexels-michael-block-3225531.jpg">
+                <img src="images\video-icon-8030.jpg" class="play-btn">
+            </div>  
+              <p>Our <br>Services</p>
+            </div>
+            <div class="small-img-row">
+                <div class="small-img">
+                  <img src="images\pexels-vincent-ma-janssen-1310777.jpg">
+                  <img src="images\video-icon-8030.jpg" class="play-btn">
+                </div>  
+                <p>Our <br>Services</p>
+              </div>
+              <div class="small-img-row">
+                <div class="small-img">
+                  <img src="images\pexels-kyle-roxas-2122294.jpg">
+                  <img src="images\video-icon-8030.jpg" class="play-btn">
+                </div>  
+                <p>Our <br>Services</p>
+              </div>
+           </div>     
+            </div>
+        </div>
+      <div class="video-player" id="VideoPlayer">
+        <video width="100%" controls autoplay id="myVideo">
+            <source src="images\video (1080p) (1).mp4" type="video/mp4">
+        </video>
+        <img src="images\images.jpg" class="close-btn" onclick="stopVideo()">
+      </div>   
+      <script>
+        var VideoPlayer =document.getElementById("videoPlayer");
+        var myVideo =document.getElementById("myVideo");
+        function stopVideo(){
+            VideoPlayer.style.display="none";
+        }
+
+      </script>

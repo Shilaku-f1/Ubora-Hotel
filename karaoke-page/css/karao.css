@@ -1,0 +1,457 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background-color: transparent;
+  color: orange;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+}
+/*THE NAVIGATION BAR*/
+.container{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+  background-position: center;
+  background-size: auto;
+  justify-content: center;
+}
+.navbar{
+  position:relative;
+  width: 100%;
+  height:20%;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+}
+.theImage{
+  position: relative;
+  width: 15%;
+  height: 100%;
+  
+}
+.navbar1{
+  position: relative;
+  width: 70%;
+  height: 100%;
+  margin-left: 200px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-top: 28px;
+}
+.logo{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: 0px;
+  cursor: pointer;
+}
+/*MENU BARS*/
+.menu-bars{
+  position: relative;
+  width: 15%;
+  height: 60%;
+
+  margin-right: 0px;
+  margin-top: 0px;
+  flex: 0%;
+}
+.menu{
+  cursor: pointer;
+}
+.bar1, .bar2, .bar3{
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin-top: 6px;
+  margin-right: 50px;
+  transition: 0.4s;
+}
+
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 20px;
+}
+.navbar ul li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #efefef;
+  font-weight: 600;
+  padding: 15px;
+}
+
+
+li a:hover{
+  background:orange;
+  transition: 0.5s;
+}
+.navbar a:hover{
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+
+
+/* Banner styles */
+.banner {
+  position: absolute;
+  top: 0px;
+  background-image: url("karaoke-four.jpg");
+  background-size: cover;
+  background-position: center;
+  height: calc(
+    100vh - 10vh
+  ); /* Subtract the navbar height from the desired banner height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+.banner-content{
+  position: relative;
+  background-color: transparent;
+  width: 900px;
+  height: 200px;
+  left: 180px;
+  top: 200px;
+}
+/*.thevideo{
+  position: relative;
+  width: 100%;
+  height: 200px;
+
+}
+.thevideo1{
+  position: relative;
+  width: 100%;
+  height: 80%;
+
+}*/
+
+.banner h1 {
+  font-size: 58px; /* Larger font size */
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow for a nice effect */
+}
+
+.banner p {
+  font-size: 30px;
+}
+
+/* Karaoke Event styles */
+.theevents{
+  position: relative;
+  top: 800px;
+  background-color: black;
+
+}
+.karaoke-events {
+  padding: 40px;
+  background-image: url("./download.jpeg");
+  text-align: center;
+}
+
+.karaoke-events h2 {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.event-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-image: linear-gradient(62deg, black 0%, white 100%);
+}
+
+.event-card {
+  flex-basis: calc(33.33% - 10px); /* 33.33% width with some space in between */
+  margin-bottom: 20px;
+  text-align: justify;
+  background-color: black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.event-card .image {
+  overflow: hidden;
+}
+
+.event-card .image img {
+  width: 20rem;
+  height: 20rem; /* Maintain aspect ratio */
+}
+
+.event-card .text-section {
+  padding: 20px;
+}
+
+.event-card p {
+  margin: 0;
+}
+
+.event-card:hover {
+  transform: scale(1.02); /* Increase the size by 5% on hover */
+}
+
+@media screen and (max-width: 768px) {
+  .event-card {
+    flex-basis: calc(50% - 10px); /* 50% width on smaller screens */
+  }
+}
+
+
+
+/* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+  .footer .footer-content {
+    flex-direction: column;
+  }
+}
+
+
+/*SLIDESHOW*/
+.theslide{
+  position: relative;
+  top: 800px;
+}
+main {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+background-image: linear-gradient(62deg, black 0%, white 100%);
+
+}
+
+#carousel {
+  position: relative;
+  height: 400px;
+  top: 240px;
+  transform: translateY(-50%);
+  overflow: hidden;
+  background-color: transparent;
+}
+#carousel div {
+  position: absolute;
+  transition: transform 400ms, left 400ms, opacity 400ms, z-index 0s;
+  opacity: 1;
+}
+#carousel div img {
+  width: 400px;
+  height: 350px;
+  transition: width 400ms;
+   -webkit-user-drag: none;
+   box-shadow: grey 0px 20px 30px -10px;
+   border-radius: 10px;
+}
+#carousel div.hideLeft {
+  left: 0%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+#carousel div.hideLeft img {
+  width: 200px;
+  height: 150px;
+}
+#carousel div.hideRight {
+  left: 100%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+#carousel div.hideRight img {
+  width: 200px;
+  height: 150px;
+}
+#carousel div.prev {
+  z-index: 5;
+  left: 30%;
+  transform: translateY(50px) translateX(-50%);
+}
+#carousel img:hover {
+  cursor: pointer;
+}
+#carousel div.prev img {
+  width: 300px;
+  height: 250px;
+}
+#carousel div.prevLeftSecond {
+  z-index: 4;
+  left: 15%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+}
+#carousel div.prevLeftSecond img {
+  width: 200px;
+  height: 150px;
+}
+#carousel div.selected {
+  z-index: 10;
+  left: 50%;
+  transform: translateY(0px) translateX(-50%);
+}
+#carousel div.next {
+  z-index: 5;
+  left: 70%;
+  transform: translateY(50px) translateX(-50%);
+}
+#carousel div.next img {
+  width: 300px;
+  height: 250px;
+}
+#carousel div.nextRightSecond {
+  z-index: 4;
+  left: 85%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+}
+#carousel div.nextRightSecond img {
+  width: 200px;
+  height: 150px;
+}
+
+/*previous or next buttons css*/
+
+.buttons {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 100px;
+}
+
+.button-82-pushable {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+/*.button-82-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-width: 4px;
+  border-color: black;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: hsl(0deg 0% 0% / 0.25);
+  will-change: transform;
+  transform: translateY(2px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}*/
+/*
+.button-82-edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(
+    to left,
+    hsl(340deg 100% 16%) 0%,
+    hsl(340deg 100% 32%) 8%,
+    hsl(340deg 100% 32%) 92%,
+    hsl(340deg 100% 16%) 100%
+  );
+}*/
+
+.button-82-front {
+  display: block;
+  position: relative;
+  padding: 12px 27px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  color: white;
+  top: 100px;
+  left: 500px;
+  background:orange;
+  border-width: 14px;
+  border-color: black;
+  /*background: hsl(345deg 100% 47%);*/
+  will-change: transform;
+  transform: translateY(-4px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+@media (min-width: 768px) {
+  .button-82-front {
+    font-size: 1.25rem;
+    padding: 12px 42px;
+  }
+}
+
+/*.button-82-pushable:hover {
+  filter: brightness(110%);
+  -webkit-filter: brightness(110%);
+}
+
+.button-82-pushable:hover .button-82-front {
+  transform: translateY(-6px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}*/
+
+.button-82-pushable:active .button-82-front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+.button-82-pushable:hover .button-82-shadow {
+  transform: translateY(4px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-82-pushable:active .button-82-shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+.button-82-pushable:focus:not(:focus-visible) {
+  outline: none;
+}
+.par{
+  position: relative;
+  top: -40px;
+}
+
+/*THE FORMS*/
+.forms{
+  position: relative;
+  top: 990px;
+}
